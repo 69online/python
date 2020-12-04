@@ -1,0 +1,20 @@
+import random
+min=1
+max=6
+meme= input ("You wanna play the game? yes or no?")
+if meme =="no" or meme == "n":
+    print ('jab khelna hi nhi tha to yha aaya kyu *apshabd*')
+    
+elif meme == "yes" or meme == "y":
+        print ("Let's begin rolling the dices then...")
+        print ("Your number on the dice is:")
+        a= (random.randint(min, max))
+        print (a)
+        if a==6:
+            print ('another chance hai bete teri')
+            b=(random.randint(min, max))
+            print (b)
+            if b==6:
+                print ('last chance chal')
+                c=(random.randint(min, max))
+                print (c)
